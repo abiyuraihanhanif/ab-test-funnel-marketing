@@ -9,6 +9,12 @@ Dataset: "Synthetic Web Analytics Funnel Events" by GenerateRealData
 (https://creativecommons.org/licenses/by/4.0/).
 Kaggle: https://www.kaggle.com/datasets/generaterealdata/synthetic-web-analytics-funnel-events
 
+Dataset: "Marketing A/B Testing" by faviovaz on Kaggle
+(https://www.kaggle.com/datasets/faviovaz/marketing-ab-testing),
+released under CC0 1.0 Public Domain
+(https://creativecommons.org/publicdomain/zero/1.0/).
+Attribution is not required but is given here for transparency.
+
 Note: this dataset is synthetic. The analysis demonstrates methodology
 and does not describe a real business. The original data was cleaned,
 joined across tables, and aggregated into funnel metrics.
