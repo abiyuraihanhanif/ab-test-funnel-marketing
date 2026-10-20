@@ -1,0 +1,8 @@
+day,day_order,ad_conversion_pct,psa_conversion_pct,lift_pp,p_value,p_bonferroni,significant
+Monday,1,3.324,2.256,1.068,0.000508,0.003555,Significant
+Tuesday,2,3.044,1.445,1.599,1e-06,5e-06,Significant
+Wednesday,3,2.536,1.576,0.96,0.000376,0.002635,Significant
+Thursday,4,2.164,2.023,0.141,0.554751,1.0,Not significant
+Friday,5,2.246,1.63,0.616,0.011569,0.080982,Not significant
+Saturday,6,2.131,1.4,0.731,0.007484,0.052387,Not significant
+Sunday,7,2.462,2.059,0.402,0.157186,1.0,Not significant

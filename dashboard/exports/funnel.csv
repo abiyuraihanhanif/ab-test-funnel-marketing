@@ -1,0 +1,6 @@
+stage_order,stage,sessions,step_conversion_pct,drop_off_pct,overall_conversion_pct
+1,Sessions Started,84000,,,100.0
+2,Viewed Product,56579,67.36,32.64,67.36
+3,Added to Cart,22665,40.06,59.94,26.98
+4,Began Checkout,12844,56.67,43.33,15.29
+5,Purchased,7609,59.24,40.76,9.06

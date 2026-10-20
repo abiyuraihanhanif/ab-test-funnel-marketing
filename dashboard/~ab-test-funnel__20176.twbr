@@ -1,0 +1,1826 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0912.1023                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='c24c8dc518d1e24b09d999e54803a69a870ebe9dbe5b1869d155e15462c7c219' _.fcp.WorkbookFingerprinting.true...creator-author-id='c24c8dc518d1e24b09d999e54803a69a870ebe9dbe5b1869d155e15462c7c219' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='c24c8dc518d1e24b09d999e54803a69a870ebe9dbe5b1869d155e15462c7c219' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='c24c8dc518d1e24b09d999e54803a69a870ebe9dbe5b1869d155e15462c7c219' original-version='18.1' source-build='2026.2.3 (20262.26.0912.1023)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='ab_by_day' inline='true' name='federated.1ssc8xa011qoi21169z3n17zfu7y' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ab_by_day' name='textscan.18g0to30xdjl7b19yv9i613o3ubd'>
+            <connection class='textscan' directory='C:/Users/Lenovo/Documents/Folder Abi/Kerja/Dummy Project/ab-test-funnel-marketing/dashboard/exports' filename='ab_by_day.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.18g0to30xdjl7b19yv9i613o3ubd' name='ab_by_day.csv' table='[ab_by_day#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=',' text-qualifier='&quot;'>
+            <column datatype='string' name='day' ordinal='0' />
+            <column datatype='integer' name='day_order' ordinal='1' />
+            <column datatype='real' name='ad_conversion_pct' ordinal='2' />
+            <column datatype='real' name='psa_conversion_pct' ordinal='3' />
+            <column datatype='real' name='lift_pp' ordinal='4' />
+            <column datatype='real' name='p_value' ordinal='5' />
+            <column datatype='real' name='p_bonferroni' ordinal='6' />
+            <column datatype='string' name='significant' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ab_by_day.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='quote-char'>&quot;\&quot;&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[day]</local-name>
+            <parent-name>[ab_by_day.csv]</parent-name>
+            <remote-alias>day</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ab_by_day.csv_568535BC490246689AB60C0CF3F38793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_order</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day_order]</local-name>
+            <parent-name>[ab_by_day.csv]</parent-name>
+            <remote-alias>day_order</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_by_day.csv_568535BC490246689AB60C0CF3F38793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ad_conversion_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ad_conversion_pct]</local-name>
+            <parent-name>[ab_by_day.csv]</parent-name>
+            <remote-alias>ad_conversion_pct</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_by_day.csv_568535BC490246689AB60C0CF3F38793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>psa_conversion_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[psa_conversion_pct]</local-name>
+            <parent-name>[ab_by_day.csv]</parent-name>
+            <remote-alias>psa_conversion_pct</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_by_day.csv_568535BC490246689AB60C0CF3F38793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lift_pp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lift_pp]</local-name>
+            <parent-name>[ab_by_day.csv]</parent-name>
+            <remote-alias>lift_pp</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_by_day.csv_568535BC490246689AB60C0CF3F38793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>p_value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[p_value]</local-name>
+            <parent-name>[ab_by_day.csv]</parent-name>
+            <remote-alias>p_value</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_by_day.csv_568535BC490246689AB60C0CF3F38793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>p_bonferroni</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[p_bonferroni]</local-name>
+            <parent-name>[ab_by_day.csv]</parent-name>
+            <remote-alias>p_bonferroni</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_by_day.csv_568535BC490246689AB60C0CF3F38793]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>significant</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[significant]</local-name>
+            <parent-name>[ab_by_day.csv]</parent-name>
+            <remote-alias>significant</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ab_by_day.csv_568535BC490246689AB60C0CF3F38793]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='ab_by_day.csv' datatype='table' name='[__tableau_internal_object_id__].[ab_by_day.csv_568535BC490246689AB60C0CF3F38793]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Lenovo/AppData/Local/Temp/TableauTemp/#TableauTemp_098fe5f0ffim521b4omba0v9up66.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/17/2026 12:41:48 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>day</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>day</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ab_by_day.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ab_by_day.csv_568535BC490246689AB60C0CF3F38793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>day_order</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[day_order]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>day_order</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ab_by_day.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_by_day.csv_568535BC490246689AB60C0CF3F38793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ad_conversion_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ad_conversion_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ad_conversion_pct</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ab_by_day.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_by_day.csv_568535BC490246689AB60C0CF3F38793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>psa_conversion_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[psa_conversion_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>psa_conversion_pct</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ab_by_day.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_by_day.csv_568535BC490246689AB60C0CF3F38793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lift_pp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[lift_pp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lift_pp</remote-alias>
+              <ordinal>4</ordinal>
+              <family>ab_by_day.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_by_day.csv_568535BC490246689AB60C0CF3F38793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>p_value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[p_value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>p_value</remote-alias>
+              <ordinal>5</ordinal>
+              <family>ab_by_day.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_by_day.csv_568535BC490246689AB60C0CF3F38793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>p_bonferroni</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[p_bonferroni]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>p_bonferroni</remote-alias>
+              <ordinal>6</ordinal>
+              <family>ab_by_day.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_by_day.csv_568535BC490246689AB60C0CF3F38793]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>significant</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[significant]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>significant</remote-alias>
+              <ordinal>7</ordinal>
+              <family>ab_by_day.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ab_by_day.csv_568535BC490246689AB60C0CF3F38793]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Indonesia&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='ab_by_day.csv' id='ab_by_day.csv_568535BC490246689AB60C0CF3F38793'>
+            <properties context=''>
+              <relation connection='textscan.18g0to30xdjl7b19yv9i613o3ubd' name='ab_by_day.csv' table='[ab_by_day#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=',' text-qualifier='&quot;'>
+                  <column datatype='string' name='day' ordinal='0' />
+                  <column datatype='integer' name='day_order' ordinal='1' />
+                  <column datatype='real' name='ad_conversion_pct' ordinal='2' />
+                  <column datatype='real' name='psa_conversion_pct' ordinal='3' />
+                  <column datatype='real' name='lift_pp' ordinal='4' />
+                  <column datatype='real' name='p_value' ordinal='5' />
+                  <column datatype='real' name='p_bonferroni' ordinal='6' />
+                  <column datatype='string' name='significant' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='ab_summary' inline='true' name='federated.1u2qub11b73uog171llul0taqumv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ab_summary' name='textscan.15gc6t80y3j40p1dgd9te0pb4rf4'>
+            <connection class='textscan' directory='C:/Users/Lenovo/Documents/Folder Abi/Kerja/Dummy Project/ab-test-funnel-marketing/dashboard/exports' filename='ab_summary.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.15gc6t80y3j40p1dgd9te0pb4rf4' name='ab_summary.csv' table='[ab_summary#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=',' text-qualifier='&quot;'>
+            <column datatype='string' name='test_group' ordinal='0' />
+            <column datatype='integer' name='users' ordinal='1' />
+            <column datatype='integer' name='conversions' ordinal='2' />
+            <column datatype='string' name='group_label' ordinal='3' />
+            <column datatype='real' name='conversion_pct' ordinal='4' />
+            <column datatype='real' name='ci_low_pct' ordinal='5' />
+            <column datatype='real' name='ci_high_pct' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ab_summary.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='quote-char'>&quot;\&quot;&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>test_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[test_group]</local-name>
+            <parent-name>[ab_summary.csv]</parent-name>
+            <remote-alias>test_group</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ab_summary.csv_63A19849EE4C4F9B92F2E32AF389E72F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[users]</local-name>
+            <parent-name>[ab_summary.csv]</parent-name>
+            <remote-alias>users</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_summary.csv_63A19849EE4C4F9B92F2E32AF389E72F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>conversions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[conversions]</local-name>
+            <parent-name>[ab_summary.csv]</parent-name>
+            <remote-alias>conversions</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_summary.csv_63A19849EE4C4F9B92F2E32AF389E72F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>group_label</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[group_label]</local-name>
+            <parent-name>[ab_summary.csv]</parent-name>
+            <remote-alias>group_label</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ab_summary.csv_63A19849EE4C4F9B92F2E32AF389E72F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>conversion_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[conversion_pct]</local-name>
+            <parent-name>[ab_summary.csv]</parent-name>
+            <remote-alias>conversion_pct</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_summary.csv_63A19849EE4C4F9B92F2E32AF389E72F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ci_low_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ci_low_pct]</local-name>
+            <parent-name>[ab_summary.csv]</parent-name>
+            <remote-alias>ci_low_pct</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_summary.csv_63A19849EE4C4F9B92F2E32AF389E72F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ci_high_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ci_high_pct]</local-name>
+            <parent-name>[ab_summary.csv]</parent-name>
+            <remote-alias>ci_high_pct</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_summary.csv_63A19849EE4C4F9B92F2E32AF389E72F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Lift (pp)' datatype='real' name='[Calculation_0220233786224641]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MAX(IF [test_group]=&quot;ad&quot; THEN [conversion_pct] END)&#13;&#10;   - MAX(IF [test_group]=&quot;psa&quot; THEN [conversion_pct] END)' />
+      </column>
+      <column caption='ab_summary.csv' datatype='table' name='[__tableau_internal_object_id__].[ab_summary.csv_63A19849EE4C4F9B92F2E32AF389E72F]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Lenovo/AppData/Local/Temp/TableauTemp/#TableauTemp_1pem6ns0py42521cuo9y01f3vdss.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/17/2026 12:41:51 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>test_group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[test_group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>test_group</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ab_summary.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ab_summary.csv_63A19849EE4C4F9B92F2E32AF389E72F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>users</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>users</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ab_summary.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_summary.csv_63A19849EE4C4F9B92F2E32AF389E72F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>conversions</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[conversions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>conversions</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ab_summary.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_summary.csv_63A19849EE4C4F9B92F2E32AF389E72F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>group_label</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[group_label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>group_label</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ab_summary.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ab_summary.csv_63A19849EE4C4F9B92F2E32AF389E72F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>conversion_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[conversion_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>conversion_pct</remote-alias>
+              <ordinal>4</ordinal>
+              <family>ab_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_summary.csv_63A19849EE4C4F9B92F2E32AF389E72F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ci_low_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ci_low_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ci_low_pct</remote-alias>
+              <ordinal>5</ordinal>
+              <family>ab_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_summary.csv_63A19849EE4C4F9B92F2E32AF389E72F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ci_high_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ci_high_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ci_high_pct</remote-alias>
+              <ordinal>6</ordinal>
+              <family>ab_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_summary.csv_63A19849EE4C4F9B92F2E32AF389E72F]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Indonesia&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='ab_summary.csv' id='ab_summary.csv_63A19849EE4C4F9B92F2E32AF389E72F'>
+            <properties context=''>
+              <relation connection='textscan.15gc6t80y3j40p1dgd9te0pb4rf4' name='ab_summary.csv' table='[ab_summary#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=',' text-qualifier='&quot;'>
+                  <column datatype='string' name='test_group' ordinal='0' />
+                  <column datatype='integer' name='users' ordinal='1' />
+                  <column datatype='integer' name='conversions' ordinal='2' />
+                  <column datatype='string' name='group_label' ordinal='3' />
+                  <column datatype='real' name='conversion_pct' ordinal='4' />
+                  <column datatype='real' name='ci_low_pct' ordinal='5' />
+                  <column datatype='real' name='ci_high_pct' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='funnel+' inline='true' name='federated.1qq7w4n1guh1f31f4wkkj0m1w2vl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='funnel' name='textscan.09tk1ic0752csz15y5vog0nig1vb'>
+            <connection class='textscan' directory='C:/Users/Lenovo/Documents/Folder Abi/Kerja/Dummy Project/ab-test-funnel-marketing/dashboard/exports' filename='funnel.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.09tk1ic0752csz15y5vog0nig1vb' name='funnel.csv' table='[funnel#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=',' text-qualifier='&quot;'>
+            <column datatype='integer' name='stage_order' ordinal='0' />
+            <column datatype='string' name='stage' ordinal='1' />
+            <column datatype='integer' name='sessions' ordinal='2' />
+            <column datatype='real' name='step_conversion_pct' ordinal='3' />
+            <column datatype='real' name='drop_off_pct' ordinal='4' />
+            <column datatype='real' name='overall_conversion_pct' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[funnel.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='quote-char'>&quot;\&quot;&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stage_order</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stage_order]</local-name>
+            <parent-name>[funnel.csv]</parent-name>
+            <remote-alias>stage_order</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[funnel.csv_B756D3FE85C24C06920624584BE9A859]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[stage]</local-name>
+            <parent-name>[funnel.csv]</parent-name>
+            <remote-alias>stage</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[funnel.csv_B756D3FE85C24C06920624584BE9A859]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sessions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sessions]</local-name>
+            <parent-name>[funnel.csv]</parent-name>
+            <remote-alias>sessions</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[funnel.csv_B756D3FE85C24C06920624584BE9A859]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>step_conversion_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[step_conversion_pct]</local-name>
+            <parent-name>[funnel.csv]</parent-name>
+            <remote-alias>step_conversion_pct</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[funnel.csv_B756D3FE85C24C06920624584BE9A859]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>drop_off_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[drop_off_pct]</local-name>
+            <parent-name>[funnel.csv]</parent-name>
+            <remote-alias>drop_off_pct</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[funnel.csv_B756D3FE85C24C06920624584BE9A859]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>overall_conversion_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[overall_conversion_pct]</local-name>
+            <parent-name>[funnel.csv]</parent-name>
+            <remote-alias>overall_conversion_pct</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[funnel.csv_B756D3FE85C24C06920624584BE9A859]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Overall Conversion Rate' datatype='real' name='[Calculation_0220233785614336]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([overall_conversion_pct]) / 100' />
+      </column>
+      <column caption='funnel.csv' datatype='table' name='[__tableau_internal_object_id__].[funnel.csv_B756D3FE85C24C06920624584BE9A859]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Lenovo/AppData/Local/Temp/TableauTemp/#TableauTemp_1dmb1911ru1irs1291fkz0sf3vev.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/17/2026 12:42:08 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>stage_order</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[stage_order]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stage_order</remote-alias>
+              <ordinal>0</ordinal>
+              <family>funnel.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[funnel.csv_B756D3FE85C24C06920624584BE9A859]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stage</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stage</remote-alias>
+              <ordinal>1</ordinal>
+              <family>funnel.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[funnel.csv_B756D3FE85C24C06920624584BE9A859]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sessions</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sessions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sessions</remote-alias>
+              <ordinal>2</ordinal>
+              <family>funnel.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[funnel.csv_B756D3FE85C24C06920624584BE9A859]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>step_conversion_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[step_conversion_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>step_conversion_pct</remote-alias>
+              <ordinal>3</ordinal>
+              <family>funnel.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[funnel.csv_B756D3FE85C24C06920624584BE9A859]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>drop_off_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[drop_off_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>drop_off_pct</remote-alias>
+              <ordinal>4</ordinal>
+              <family>funnel.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[funnel.csv_B756D3FE85C24C06920624584BE9A859]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>overall_conversion_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[overall_conversion_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>overall_conversion_pct</remote-alias>
+              <ordinal>5</ordinal>
+              <family>funnel.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[funnel.csv_B756D3FE85C24C06920624584BE9A859]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Indonesia&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='funnel.csv' id='funnel.csv_B756D3FE85C24C06920624584BE9A859'>
+            <properties context=''>
+              <relation connection='textscan.09tk1ic0752csz15y5vog0nig1vb' name='funnel.csv' table='[funnel#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=',' text-qualifier='&quot;'>
+                  <column datatype='integer' name='stage_order' ordinal='0' />
+                  <column datatype='string' name='stage' ordinal='1' />
+                  <column datatype='integer' name='sessions' ordinal='2' />
+                  <column datatype='real' name='step_conversion_pct' ordinal='3' />
+                  <column datatype='real' name='drop_off_pct' ordinal='4' />
+                  <column datatype='real' name='overall_conversion_pct' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='segments' inline='true' name='federated.0ges41c0ciy2931b70nar0m49q7i' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='segments' name='textscan.0avcvon0ghsks517ni4io133qi43'>
+            <connection class='textscan' directory='C:/Users/Lenovo/Documents/Folder Abi/Kerja/Dummy Project/ab-test-funnel-marketing/dashboard/exports' filename='segments.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0avcvon0ghsks517ni4io133qi43' name='segments.csv' table='[segments#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=',' text-qualifier='&quot;'>
+            <column datatype='string' name='segment_type' ordinal='0' />
+            <column datatype='string' name='segment' ordinal='1' />
+            <column datatype='integer' name='sessions' ordinal='2' />
+            <column datatype='integer' name='purchased' ordinal='3' />
+            <column datatype='real' name='conversion_pct' ordinal='4' />
+            <column datatype='real' name='overall_avg_pct' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[segments.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='quote-char'>&quot;\&quot;&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>segment_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[segment_type]</local-name>
+            <parent-name>[segments.csv]</parent-name>
+            <remote-alias>segment_type</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[segments.csv_A651406D13F9490A90A0086724577E9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[segment]</local-name>
+            <parent-name>[segments.csv]</parent-name>
+            <remote-alias>segment</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[segments.csv_A651406D13F9490A90A0086724577E9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sessions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sessions]</local-name>
+            <parent-name>[segments.csv]</parent-name>
+            <remote-alias>sessions</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[segments.csv_A651406D13F9490A90A0086724577E9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>purchased</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[purchased]</local-name>
+            <parent-name>[segments.csv]</parent-name>
+            <remote-alias>purchased</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[segments.csv_A651406D13F9490A90A0086724577E9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>conversion_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[conversion_pct]</local-name>
+            <parent-name>[segments.csv]</parent-name>
+            <remote-alias>conversion_pct</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[segments.csv_A651406D13F9490A90A0086724577E9D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>overall_avg_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[overall_avg_pct]</local-name>
+            <parent-name>[segments.csv]</parent-name>
+            <remote-alias>overall_avg_pct</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[segments.csv_A651406D13F9490A90A0086724577E9D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='segments.csv' datatype='table' name='[__tableau_internal_object_id__].[segments.csv_A651406D13F9490A90A0086724577E9D]' role='measure' type='quantitative' />
+      <column caption='Conversion Pct' datatype='real' name='[conversion_pct]' role='dimension' type='ordinal' />
+      <column caption='Overall Avg Pct' datatype='real' name='[overall_avg_pct]' role='dimension' type='ordinal' />
+      <column caption='Purchased' datatype='integer' name='[purchased]' role='measure' type='quantitative' />
+      <column caption='Segment' datatype='string' name='[segment]' role='dimension' type='nominal' />
+      <column caption='Segment Type' datatype='string' name='[segment_type]' role='dimension' type='nominal' />
+      <column caption='Sessions' datatype='integer' name='[sessions]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Lenovo/AppData/Local/Temp/TableauTemp/#TableauTemp_10qpug71m9wx6717vl8531tkewwu.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/17/2026 01:14:42 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>segment_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[segment_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>segment_type</remote-alias>
+              <ordinal>0</ordinal>
+              <family>segments.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[segments.csv_A651406D13F9490A90A0086724577E9D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>segment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[segment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>segment</remote-alias>
+              <ordinal>1</ordinal>
+              <family>segments.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[segments.csv_A651406D13F9490A90A0086724577E9D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sessions</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sessions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sessions</remote-alias>
+              <ordinal>2</ordinal>
+              <family>segments.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[segments.csv_A651406D13F9490A90A0086724577E9D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>purchased</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[purchased]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>purchased</remote-alias>
+              <ordinal>3</ordinal>
+              <family>segments.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[segments.csv_A651406D13F9490A90A0086724577E9D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>conversion_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[conversion_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>conversion_pct</remote-alias>
+              <ordinal>4</ordinal>
+              <family>segments.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[segments.csv_A651406D13F9490A90A0086724577E9D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>overall_avg_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[overall_avg_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>overall_avg_pct</remote-alias>
+              <ordinal>5</ordinal>
+              <family>segments.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[segments.csv_A651406D13F9490A90A0086724577E9D]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Indonesia&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='segments.csv' id='segments.csv_A651406D13F9490A90A0086724577E9D'>
+            <properties context=''>
+              <relation connection='textscan.0avcvon0ghsks517ni4io133qi43' name='segments.csv' table='[segments#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=',' text-qualifier='&quot;'>
+                  <column datatype='string' name='segment_type' ordinal='0' />
+                  <column datatype='string' name='segment' ordinal='1' />
+                  <column datatype='integer' name='sessions' ordinal='2' />
+                  <column datatype='integer' name='purchased' ordinal='3' />
+                  <column datatype='real' name='conversion_pct' ordinal='4' />
+                  <column datatype='real' name='overall_avg_pct' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='AB Conversion'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Conversion Rate: Ad vs PSA</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ab_summary' name='federated.1u2qub11b73uog171llul0taqumv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1u2qub11b73uog171llul0taqumv'>
+            <column datatype='real' name='[ci_high_pct]' role='measure' type='quantitative' />
+            <column datatype='real' name='[ci_low_pct]' role='measure' type='quantitative' />
+            <column datatype='real' name='[conversion_pct]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[conversions]' role='measure' type='quantitative' />
+            <column datatype='string' name='[group_label]' role='dimension' type='nominal' />
+            <column-instance column='[group_label]' derivation='None' name='[none:group_label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ci_high_pct]' derivation='Sum' name='[sum:ci_high_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ci_low_pct]' derivation='Sum' name='[sum:ci_low_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[conversion_pct]' derivation='Sum' name='[sum:conversion_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[conversions]' derivation='Sum' name='[sum:conversions:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[users]' derivation='Sum' name='[sum:users:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[users]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <tooltip column='[federated.1u2qub11b73uog171llul0taqumv].[sum:ci_low_pct:qk]' />
+              <tooltip column='[federated.1u2qub11b73uog171llul0taqumv].[sum:ci_high_pct:qk]' />
+              <tooltip column='[federated.1u2qub11b73uog171llul0taqumv].[sum:users:qk]' />
+              <tooltip column='[federated.1u2qub11b73uog171llul0taqumv].[sum:conversions:qk]' />
+              <text column='[federated.1u2qub11b73uog171llul0taqumv].[sum:conversion_pct:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1u2qub11b73uog171llul0taqumv].[sum:conversion_pct:qk]</rows>
+        <cols>[federated.1u2qub11b73uog171llul0taqumv].[none:group_label:nk]</cols>
+      </table>
+      <simple-id uuid='{3F822516-520D-40AA-98F8-7F421CE483F8}' />
+    </worksheet>
+    <worksheet name='Funnel'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Conversion Funnel: Sessions by Stage</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='funnel+' name='federated.1qq7w4n1guh1f31f4wkkj0m1w2vl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1qq7w4n1guh1f31f4wkkj0m1w2vl'>
+            <column datatype='real' name='[drop_off_pct]' role='measure' type='quantitative' />
+            <column-instance column='[stage_order]' derivation='Min' name='[min:stage_order:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[stage]' derivation='None' name='[none:stage:nk]' pivot='key' type='nominal' />
+            <column datatype='integer' name='[sessions]' role='measure' type='quantitative' />
+            <column datatype='string' name='[stage]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[stage_order]' role='measure' type='quantitative' />
+            <column datatype='real' name='[step_conversion_pct]' role='measure' type='quantitative' />
+            <column-instance column='[drop_off_pct]' derivation='Sum' name='[sum:drop_off_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sessions]' derivation='Sum' name='[sum:sessions:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[step_conversion_pct]' derivation='Sum' name='[sum:step_conversion_pct:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1qq7w4n1guh1f31f4wkkj0m1w2vl].[none:stage:nk]' direction='ASC' using='[federated.1qq7w4n1guh1f31f4wkkj0m1w2vl].[min:stage_order:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1qq7w4n1guh1f31f4wkkj0m1w2vl].[sum:sessions:qk]' field-type='quantitative' max='126692' min='-20836' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1qq7w4n1guh1f31f4wkkj0m1w2vl].[sum:drop_off_pct:qk]' />
+              <text column='[federated.1qq7w4n1guh1f31f4wkkj0m1w2vl].[sum:sessions:qk]' />
+              <text column='[federated.1qq7w4n1guh1f31f4wkkj0m1w2vl].[sum:step_conversion_pct:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1qq7w4n1guh1f31f4wkkj0m1w2vl].[none:stage:nk]</rows>
+        <cols>[federated.1qq7w4n1guh1f31f4wkkj0m1w2vl].[sum:sessions:qk]</cols>
+      </table>
+      <simple-id uuid='{2C80AF94-D7D7-4CBC-BEE8-0405874B6EE2}' />
+    </worksheet>
+    <worksheet name='KPI Conversion'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Overall Conversion</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='funnel+' name='federated.1qq7w4n1guh1f31f4wkkj0m1w2vl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1qq7w4n1guh1f31f4wkkj0m1w2vl'>
+            <column caption='Overall Conversion Rate' datatype='real' name='[Calculation_0220233785614336]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([overall_conversion_pct]) / 100' />
+            </column>
+            <column-instance column='[stage]' derivation='None' name='[none:stage:nk]' pivot='key' type='nominal' />
+            <column datatype='real' name='[overall_conversion_pct]' role='measure' type='quantitative' />
+            <column datatype='string' name='[stage]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0220233785614336]' derivation='User' name='[usr:Calculation_0220233785614336:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1qq7w4n1guh1f31f4wkkj0m1w2vl].[none:stage:nk]'>
+            <groupfilter function='member' level='[none:stage:nk]' member='&quot;Purchased&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1qq7w4n1guh1f31f4wkkj0m1w2vl].[none:stage:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1qq7w4n1guh1f31f4wkkj0m1w2vl].[usr:Calculation_0220233785614336:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1qq7w4n1guh1f31f4wkkj0m1w2vl].[usr:Calculation_0220233785614336:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='36'>&lt;</run>
+                <run bold='true' fontsize='36'>[federated.1qq7w4n1guh1f31f4wkkj0m1w2vl].[usr:Calculation_0220233785614336:qk]</run>
+                <run bold='true' fontsize='36'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{943A18C4-88ED-4236-A4A4-7205FA9C7427}' />
+    </worksheet>
+    <worksheet name='KPI Lift'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>A/B Lift (Ad vs PSA)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ab_summary' name='federated.1u2qub11b73uog171llul0taqumv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1u2qub11b73uog171llul0taqumv'>
+            <column caption='Lift (pp)' datatype='real' name='[Calculation_0220233786224641]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MAX(IF [test_group]=&quot;ad&quot; THEN [conversion_pct] END)&#13;&#10;   - MAX(IF [test_group]=&quot;psa&quot; THEN [conversion_pct] END)' />
+            </column>
+            <column datatype='real' name='[conversion_pct]' role='measure' type='quantitative' />
+            <column datatype='string' name='[test_group]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0220233786224641]' derivation='User' name='[usr:Calculation_0220233786224641:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1u2qub11b73uog171llul0taqumv].[usr:Calculation_0220233786224641:qk]' value='*+0.00&quot; pp&quot;' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1u2qub11b73uog171llul0taqumv].[usr:Calculation_0220233786224641:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='36'>&lt;</run>
+                <run bold='true' fontsize='36'>[federated.1u2qub11b73uog171llul0taqumv].[usr:Calculation_0220233786224641:qk]</run>
+                <run bold='true' fontsize='36'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CEEA45B8-1BE7-4C4A-91FA-71F082565E5F}' />
+    </worksheet>
+    <worksheet name='Lift by Day'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Lift by Day (Exploratory, Bonferroni-adjusted)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ab_by_day' name='federated.1ssc8xa011qoi21169z3n17zfu7y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ssc8xa011qoi21169z3n17zfu7y'>
+            <column datatype='string' name='[day]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[day_order]' role='measure' type='quantitative' />
+            <column datatype='real' name='[lift_pp]' role='measure' type='quantitative' />
+            <column-instance column='[day_order]' derivation='Min' name='[min:day_order:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[day]' derivation='None' name='[none:day:nk]' pivot='key' type='nominal' />
+            <column-instance column='[significant]' derivation='None' name='[none:significant:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[significant]' role='dimension' type='nominal' />
+            <column-instance column='[lift_pp]' derivation='Sum' name='[sum:lift_pp:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1ssc8xa011qoi21169z3n17zfu7y].[none:day:nk]' direction='ASC' using='[federated.1ssc8xa011qoi21169z3n17zfu7y].[min:day_order:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ssc8xa011qoi21169z3n17zfu7y].[none:significant:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1ssc8xa011qoi21169z3n17zfu7y].[sum:lift_pp:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label-type='none' scope='per-table' value='0.0' value-column='[federated.1ssc8xa011qoi21169z3n17zfu7y].[sum:lift_pp:qk]' z-order='1' />
+          </pane>
+        </panes>
+        <rows>[federated.1ssc8xa011qoi21169z3n17zfu7y].[sum:lift_pp:qk]</rows>
+        <cols>[federated.1ssc8xa011qoi21169z3n17zfu7y].[none:day:nk]</cols>
+      </table>
+      <simple-id uuid='{C0B5168F-79BC-4D02-B2A1-C0F63E8448EE}' />
+    </worksheet>
+    <worksheet name='Segment Conversion'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Conversion Rate by Segment</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='segments' name='federated.0ges41c0ciy2931b70nar0m49q7i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ges41c0ciy2931b70nar0m49q7i'>
+            <column-instance column='[overall_avg_pct]' derivation='Avg' name='[avg:overall_avg_pct:qk]' pivot='key' type='quantitative' />
+            <column caption='Conversion Pct' datatype='real' name='[conversion_pct]' role='dimension' type='ordinal' />
+            <column-instance column='[conversion_pct]' derivation='None' name='[none:conversion_pct:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[segment]' derivation='None' name='[none:segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[segment_type]' derivation='None' name='[none:segment_type:nk]' pivot='key' type='nominal' />
+            <column caption='Overall Avg Pct' datatype='real' name='[overall_avg_pct]' role='dimension' type='ordinal' />
+            <column caption='Segment' datatype='string' name='[segment]' role='dimension' type='nominal' />
+            <column caption='Segment Type' datatype='string' name='[segment_type]' role='dimension' type='nominal' />
+            <column-instance column='[conversion_pct]' derivation='Sum' name='[sum:conversion_pct:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ges41c0ciy2931b70nar0m49q7i].[none:segment_type:nk]'>
+            <groupfilter function='member' level='[none:segment_type:nk]' member='&quot;Device&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0ges41c0ciy2931b70nar0m49q7i].[none:segment_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0ges41c0ciy2931b70nar0m49q7i].[sum:conversion_pct:qk]' field-type='quantitative' max='9.6406575059150903' min='1.8653120529252245' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0ges41c0ciy2931b70nar0m49q7i].[none:conversion_pct:ok]' />
+              <lod column='[federated.0ges41c0ciy2931b70nar0m49q7i].[avg:overall_avg_pct:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0ges41c0ciy2931b70nar0m49q7i].[sum:conversion_pct:qk]' enable-instant-analytics='true' formula='average' id='refline0' label='Overage average' label-type='custom' probability='95' scope='per-table' value-column='[federated.0ges41c0ciy2931b70nar0m49q7i].[avg:overall_avg_pct:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ges41c0ciy2931b70nar0m49q7i].[sum:conversion_pct:qk]</rows>
+        <cols>[federated.0ges41c0ciy2931b70nar0m49q7i].[none:segment:nk]</cols>
+      </table>
+      <simple-id uuid='{634B5326-B3C8-47C0-BD69-947C4F3572E4}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard'>
+      <style />
+      <size maxheight='1000' maxwidth='1200' minheight='1000' minwidth='1200' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98400' id='51' param='vert' type-v2='layout-flow' w='98666' x='667' y='800'>
+            <zone h='98400' id='44' param='horz' type-v2='layout-flow' w='98666' x='667' y='800'>
+              <zone h='98400' id='42' type-v2='layout-basic' w='98666' x='667' y='800'>
+                <zone h='50100' id='27' param='horz' type-v2='layout-flow' w='98666' x='667' y='800'>
+                  <zone h='50100' id='22' type-v2='layout-basic' w='98666' x='667' y='800'>
+                    <zone h='6568' id='16' type-v2='text' w='98666' x='667' y='800'>
+                      <formatted-text>
+                        <run bold='true' fontsize='20'>From Visits to Purchase: Funnel &amp; A/B Test Analysis</run>
+                      </formatted-text>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='15121' id='19' name='KPI Lift' w='49332' x='667' y='7368'>
+                      <layout-cache fixed-size-w='320' type-h='fixed' type-w='fixed' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone fixed-size='427' h='15121' id='18' is-fixed='true' name='KPI Conversion' w='49334' x='49999' y='7368'>
+                      <layout-cache fixed-size-h='198' type-h='fixed' type-w='fixed' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='28411' id='46' is-fixed='true' type-v2='layout-basic' w='98666' x='667' y='22489'>
+                      <zone h='28411' id='20' param='horz' type-v2='layout-flow' w='45499' x='667' y='22489'>
+                        <zone fixed-size='515' h='28411' id='21' is-fixed='true' name='Funnel' w='45499' x='667' y='22489'>
+                          <layout-cache minwidth='260' type-h='cell' type-w='scalable' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                      </zone>
+                      <zone h='28411' id='47' param='horz' type-v2='layout-flow' w='53167' x='46166' y='22489'>
+                        <zone h='28411' id='25' name='Segment Conversion' w='53167' x='46166' y='22489'>
+                          <layout-cache cell-count-w='3' minheight='206' non-cell-size-w='67' type-h='scalable' type-w='cell' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+                <zone h='38599' id='29' param='horz' type-v2='layout-flow' w='98666' x='667' y='50900'>
+                  <zone fixed-size='538' h='38599' id='30' is-fixed='true' name='AB Conversion' w='45500' x='667' y='50900'>
+                    <layout-cache minheight='213' type-h='scalable' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='38599' id='31' name='Lift by Day' w='53166' x='46167' y='50900'>
+                    <layout-cache cell-count-w='7' non-cell-size-w='72' type-h='fixed' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='9701' id='33' type-v2='text' w='98666' x='667' y='89499'>
+                  <formatted-text>
+                    <run>Data: &quot;Synthetic Web Analytics Funnel Events&quot; by GenerateRealData (CC BY 4,0); &quot;Marketing A/B Testing&quot; by faviovaz (CC0). Funnel data is synthetic; findings demonstrate methodology, not a real business.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone fixed-size='160' h='9800' id='43' is-fixed='true' param='vert' type-v2='layout-flow' w='13333' x='84417' y='54500'>
+          <zone h='8400' id='45' name='Lift by Day' pane-specification-id='0' param='[federated.1ssc8xa011qoi21169z3n17zfu7y].[none:significant:nk]' type-v2='color' w='13333' x='84417' y='54500'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1650' minheight='1650' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='49' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98400' id='48' param='vert' type-v2='layout-flow' w='98666' x='667' y='800'>
+                <zone h='6568' id='16' type-v2='text' w='98666' x='667' y='800'>
+                  <formatted-text>
+                    <run bold='true' fontsize='20'>From Visits to Purchase: Funnel &amp; A/B Test Analysis</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='143' h='15122' id='19' is-fixed='true' name='KPI Lift' w='49332' x='667' y='7368'>
+                  <layout-cache fixed-size-w='320' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='143' h='15122' id='18' is-fixed='true' name='KPI Conversion' w='49334' x='49999' y='7368'>
+                  <layout-cache fixed-size-h='198' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='276' h='28410' id='21' is-fixed='true' name='Funnel' w='45500' x='667' y='22490'>
+                  <layout-cache minwidth='260' type-h='cell' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='276' h='28410' id='25' is-fixed='true' name='Segment Conversion' w='53166' x='46167' y='22490'>
+                  <layout-cache cell-count-w='3' minheight='206' non-cell-size-w='67' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38600' id='30' is-fixed='true' name='AB Conversion' w='45500' x='667' y='50900'>
+                  <layout-cache minheight='213' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38600' id='31' is-fixed='true' name='Lift by Day' w='53166' x='46167' y='50900'>
+                  <layout-cache cell-count-w='7' non-cell-size-w='72' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8400' id='45' name='Lift by Day' pane-specification-id='0' param='[federated.1ssc8xa011qoi21169z3n17zfu7y].[none:significant:nk]' type-v2='color' w='13333' x='84417' y='54500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9700' id='33' type-v2='text' w='98666' x='667' y='89500'>
+                  <formatted-text>
+                    <run>Data: &quot;Synthetic Web Analytics Funnel Events&quot; by GenerateRealData (CC BY 4,0); &quot;Marketing A/B Testing&quot; by faviovaz (CC0). Funnel data is synthetic; findings demonstrate methodology, not a real business.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{B571F00E-851E-4139-98D9-B8AA46DF577B}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='137'>
+    <window class='worksheet' name='Funnel'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1qq7w4n1guh1f31f4wkkj0m1w2vl].[sum:drop_off_pct:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BD48D49B-920D-443A-BE40-E406D7D97148}' />
+    </window>
+    <window class='worksheet' name='KPI Conversion'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A43C0689-AB57-447F-B60C-10C790F770C6}' />
+    </window>
+    <window class='worksheet' name='KPI Lift'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3848AE3B-6F45-418A-A41B-587F7546DA89}' />
+    </window>
+    <window class='worksheet' name='Segment Conversion'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0ges41c0ciy2931b70nar0m49q7i].[none:segment_type:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AA645AC1-210F-441A-AF8A-8BA63AFA32FE}' />
+    </window>
+    <window class='worksheet' name='AB Conversion'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8B65B714-9260-4A41-9E5D-47FFBC95EE06}' />
+    </window>
+    <window class='worksheet' name='Lift by Day'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ssc8xa011qoi21169z3n17zfu7y].[none:significant:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{55E4713C-9E48-4FC5-9B75-633C06DE23CB}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard'>
+      <viewpoints>
+        <viewpoint name='AB Conversion'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Funnel'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI Conversion'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI Lift'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Lift by Day'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Segment Conversion'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{214B9648-0EFC-484F-9768-AD995C7C591D}' />
+    </window>
+  </windows>
+</workbook>

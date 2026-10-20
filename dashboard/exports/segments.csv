@@ -1,0 +1,14 @@
+segment_type,segment,sessions,purchased,conversion_pct,overall_avg_pct
+Device,desktop,28528,2548,8.93,9.06
+Device,mobile,48859,4471,9.15,9.06
+Device,tablet,6613,590,8.92,9.06
+Traffic Source,bing,4091,377,9.22,9.06
+Traffic Source,direct,19967,1798,9.0,9.06
+Traffic Source,facebook,7546,698,9.25,9.06
+Traffic Source,google,32182,2888,8.97,9.06
+Traffic Source,instagram,9305,865,9.3,9.06
+Traffic Source,newsletter,6657,578,8.68,9.06
+Traffic Source,partner site,4252,405,9.52,9.06
+Month,2026-07,28628,2567,8.97,9.06
+Month,2026-08,28675,2547,8.88,9.06
+Month,2026-09,26697,2495,9.35,9.06
