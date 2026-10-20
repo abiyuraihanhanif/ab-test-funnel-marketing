@@ -74,6 +74,8 @@ ab-test-funnel-marketing/
 │   ├── exports/                     # Aggregated CSVs used by Tableau
 │   ├── ab-test-funnel.twbx          # Tableau workbook
 │   └── dashboard.png                # Dashboard screenshot
+├── sql/
+│   └── funnel_by_stage.sql      # Funnel query (unique sessions per stage)
 └── README.md
 ```
 
